@@ -1,5 +1,4 @@
-// بيانات الحروف: العبري + الاسم العربي + التقريب + IPA + ملاحظة أولية
-// الملاحظات والـ IPA تقريبية تعليمية، وليست معيارًا لهجيًا صارمًا.
+// بيانات الحروف الأساسية + IPA + تقريب عربي (تعليمي)
 const LETTERS = [
   {he:"א", nameAr:"ألف", approxAr:"ء/أ", ipa:"ʔ / ∅", tips:"حامل حركة أو همزة خفيفة."},
   {he:"בּ", nameAr:"بيت (منقوط)", approxAr:"ب", ipa:"b", tips:"بـ صافية."},
@@ -11,7 +10,7 @@ const LETTERS = [
   {he:"ז", nameAr:"زاين", approxAr:"ز", ipa:"z", tips:"زاي."},
   {he:"ח", nameAr:"حيت", approxAr:"ح/خ", ipa:"χ ~ ħ", tips:"بين خ وح."},
   {he:"ט", nameAr:"طِت", approxAr:"ط", ipa:"tˤ ~ t", tips:"أقرب لت مفخمة تاريخيًا."},
-  {he:"י", nameAr:"يود", approxAr:"ي", ipa:"j / i", tips:"ي أو صوت علة i."},
+  {he:"י", nameAr:"يود", approxAr:"ي", ipa:"j / i", tips:"ي أو i."},
   {he:"כּ", nameAr:"كاف (منقوط)", approxAr:"ك", ipa:"k", tips:"كاف."},
   {he:"כ", nameAr:"كاف", approxAr:"خ", ipa:"χ", tips:"بدون نقطة ≈ خ."},
   {he:"ך", nameAr:"كاف نهائي", approxAr:"خ", ipa:"χ", tips:"شكل نهائي."},
@@ -27,14 +26,14 @@ const LETTERS = [
   {he:"ף", nameAr:"پي نهائي", approxAr:"ف", ipa:"f", tips:"شكل نهائي."},
   {he:"צ", nameAr:"صدي", approxAr:"ص/تس", ipa:"tsˁ ~ ts", tips:"بين ص وتس. نهائي ץ."},
   {he:"ץ", nameAr:"صدي نهائي", approxAr:"ص/تس", ipa:"ts", tips:"شكل نهائي."},
-  {he:"ק", nameAr:"قوف", approxAr:"ق/ك", ipa:"k", tips:"غالبًا ك مفخّمة قديمًا."},
+  {he:"ק", nameAr:"قوف", approxAr:"ق/ك", ipa:"k", tips:"غالبًا ك مقهورة."},
   {he:"ר", nameAr:"ريش", approxAr:"ر/غ", ipa:"ʁ ~ r ~ ɾ", tips:"ر حنجرية أو لثوية."},
   {he:"שׁ", nameAr:"شين", approxAr:"ش", ipa:"ʃ", tips:"نقطة يمين = ش."},
   {he:"שׂ", nameAr:"سين (شين يسار)", approxAr:"س", ipa:"s", tips:"نقطة يسار = س."},
   {he:"ת", nameAr:"تاڤ", approxAr:"ت", ipa:"t", tips:"تاء."}
 ];
 
-// الحركات (نِقُوط) (تعليمي)
+// حركات تعليمية
 const NIQQUD = [
   {mark:"\u05B8", name:"قامَتس", approx:"ا/آ"},
   {mark:"\u05B6", name:"سِغول", approx:"e / ِ"},
@@ -44,5 +43,4 @@ const NIQQUD = [
   {mark:"\u05B0", name:"شڤا", approx:"سكون/حركة خفيفة"}
 ];
 
-// مقاطع قراءة بسيطة
 const SYLLABLES = ["בַ","דִ","מֶ","שׁו","כָּ","לֶ","רִ","נָ","סו","אִ","פּו","צֵ","תַּ","יו","חו"];

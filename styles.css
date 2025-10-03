@@ -17,7 +17,7 @@ main{max-width:1100px;margin:20px auto;padding:0 16px}
 .mode-switch{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 12px}
 .mode-btn{padding:8px 12px;border-radius:8px;border:1px solid #2a2f45;background:#1b1f33;color:#dbe1ff;cursor:pointer}
 .mode-btn.active,.mode-btn:hover{background:#2a3051}
-.practice-area{min-height:200px;border:1px dashed #2a2f45;border-radius:8px;padding:12px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px}
+.practice-area{min-height:160px;border:1px dashed #2a2f45;border-radius:8px;padding:12px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px}
 .big{font-size:52px}
 input[type="text"]{padding:10px;border-radius:8px;border:1px solid #2a2f45;background:#0f1320;color:#fff;min-width:260px}
 button.primary{background:#4158f5;border:1px solid #4158f5;color:white;padding:10px 14px;border-radius:8px;cursor:pointer}
@@ -39,3 +39,6 @@ kbd{background:#0f1320;border:1px solid #2a2f45;border-radius:4px;padding:2px 6p
 .mnem{margin-top:8px}
 .mnem textarea{width:100%;min-height:60px;padding:8px;border-radius:8px;border:1px solid #2a2f45;background:#0f1320;color:#fff}
 .small{font-size:12px;opacity:.85}
+.table{width:100%;border-collapse:collapse;margin-top:10px}
+.table th,.table td{border:1px solid #2a2f45;padding:8px;text-align:center}
+.table th{background:#1b1f33}

@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>مدرّب العبرية – عربي (نسخة متقدّمة)</title>
+  <title>مدرّب العبرية – عربي (نسخة V3)</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 <header class="topbar">
-  <h1>مدرّب العبرية – عربي (متقدّم)</h1>
+  <h1>مدرّب العبرية – عربي (V3)</h1>
   <nav>
     <button class="tab-btn active" data-tab="letters">الحروف</button>
     <button class="tab-btn" data-tab="practice">تمارين</button>
     <button class="tab-btn" data-tab="review">مراجعة ذكية SRS</button>
     <button class="tab-btn" data-tab="quiz">اختبار</button>
     <button class="tab-btn" data-tab="reading">القراءة</button>
+    <button class="tab-btn" data-tab="translit">تحويل كلمة</button>
     <button class="tab-btn" data-tab="settings">إعدادات</button>
   </nav>
 </header>
@@ -47,7 +48,7 @@
         <details>
           <summary>🧠 مُساعِد الصوت: اكتب صوتًا بالعربية ويقترح الحرف العبري</summary>
           <div id="phonHelper" class="helper">
-            <input id="phonIn" type="text" placeholder="مثال: kh, sh, ch, ts, th, a, i, u ...">
+            <input id="phonIn" type="text" placeholder="مثال: kh, sh, ts, a, i, u ...">
             <button class="mode-btn" id="phonSuggest">اقترح</button>
             <div id="phonOut" class="drills"></div>
           </div>
@@ -71,7 +72,7 @@
       <p>كل حرف له صندوق (1–5). الإجابة الصحيحة ترفعه، والخطأ يُنزل الصندوق. العناصر تُستدعى تلقائيًا حسب موعدها.</p>
       <div class="review-controls">
         <button id="startReview" class="primary">ابدأ جلسة مراجعة (10 بطاقات)</button>
-        <span class="badge" id="dueCount">الواجهات المستحقة: –</span>
+        <span class="badge" id="dueCount">المستحق: –</span>
       </div>
       <div id="srsArea" class="practice-area"></div>
     </div>
@@ -98,6 +99,20 @@
     </div>
   </section>
 
+  <!-- NEW: Transliteration Tab -->
+  <section id="translit" class="tab">
+    <div class="panel">
+      <h2>تحويل كلمة عربية → كتابة عبرية + شرح كل حرف</h2>
+      <p class="small">تقريب تعليمي (ليس ترجمةً كاملة ولا تمثيلًا لهجيًا دقيقًا). الهدف هو التدريب على الربط الصوتي-الكتابي.</p>
+      <div class="helper" style="margin-bottom:8px">
+        <input id="arWord" type="text" placeholder="اكتب كلمة/جملة بالعربية (بدون تشكيل)">
+        <button class="primary" id="doTranslit">حوّل</button>
+      </div>
+      <div id="translitOut" class="practice-area"></div>
+      <div id="translitExplain"></div>
+    </div>
+  </section>
+
   <!-- Settings Tab -->
   <section id="settings" class="tab">
     <div class="panel">
@@ -113,7 +128,7 @@
       </div>
       <div class="about">
         <h3>حول التطبيق</h3>
-        <p>نسخة متقدّمة مع IPA ومراجعة ذكية ولوحة مفاتيح عبرية ومُساعد صوتي كتابي. كل البيانات محليًا.</p>
+        <p>نسخة V3 تتضمن: IPA، SRS، مساعد صوتي كتابي، لوحة مفاتيح عبرية، وتحويل كلمة عربي→عبري مع شرح.</p>
       </div>
     </div>
   </section>
